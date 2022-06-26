@@ -53,6 +53,7 @@ body {
 }
 .logo {
   width: 60px;
+  margin:0;
 }
 
 .header .links {
@@ -60,6 +61,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 30px;
+  height: 21px;
 }
 
 .header .links:hover ul {
@@ -107,11 +110,14 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  padding: 0;
 }
 .header .container .icon > *{
   height: 2px;
   background-color: #333;
-  margin-bottom: 3px;
+  margin: 0 0 3px 0;
+
+
 }
 .header .links .icon span:first-child {
   flex-basis: 100%;
@@ -128,3 +134,33 @@ ul {
   flex-basis: 100%;
 
 }
+/* End Header */
+/* Start Landing */
+.landing {
+  background-image: url(../images/landing.jpg);
+  background-size: cover;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+}
+
+.landing .section-text {
+  display: flex;
+  width: 320px;
+  max-width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.landing .section-text h1 {
+  font-weight: bold;
+  font-size: 50px;
+  color: var(--main-color);
+  margin: 0;
+}
+.landing .section-text p {
+    font-size: 19px;
+    line-height: 1.8;
+    margin-left: 5%;
+}
+/* End Landing */
