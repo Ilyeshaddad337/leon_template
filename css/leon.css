@@ -77,7 +77,7 @@ i {
 .header {
   padding: 20px;
 }
-.container {
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -296,3 +296,29 @@ ul {
   }
 }
 /* End Services */
+
+/* Start Portfolio */
+
+.portfolio {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: #f6f6f6;  
+}
+.portfolio .portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 100px;
+}
+.portfolio .card {
+  background-color: #fff;
+  transition: transform 350ms ease-in;
+}
+.portfolio .card:hover {
+  transform: scale(1.03);
+}
+
+.portfolio .portfolio-content img {
+  max-width: 100%;
+}
+/* End Portfolio */
