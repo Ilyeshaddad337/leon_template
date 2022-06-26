@@ -237,14 +237,14 @@ ul {
 .services .service-content {
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-  grid-gap: 20px;
-  margin-top: 6rem;
+  grid-gap: 30px;
+  margin-top: 100px;
   
 }
 
 .services .service-content .srv {
   display: flex;
-  justify-content: space-between  ;
+  justify-content: space-between;
   gap: 15px;
   margin-bottom: 40px;
 }
@@ -289,5 +289,10 @@ ul {
   right:0;
   top: -50px;
   z-index: -1;
+}
+@media (max-width: 1199px) {
+  .col3 {
+    display: none;
+  }
 }
 /* End Services */
