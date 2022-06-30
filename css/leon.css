@@ -1,7 +1,7 @@
 /* Start Variables */
 :root {
   --main-color: #10cab7;
-  --secondary-color: #2c4755;
+  --secondary-color: #2c4755a9;
   --section-padding: 60px;
   --section-background: #f6f6f6;  
   --main-duration: 0.5s;
@@ -256,7 +256,7 @@ ul {
 }
 
 .services .service-content i {
-  flex-basis: 60px;
+  flex-basis: 60px; 
 }
 .services .service-content .srv .srv-text {
   margin-left: 15px;
@@ -312,13 +312,94 @@ ul {
 }
 .portfolio .card {
   background-color: #fff;
+  padding: 1.25rem;
   transition: transform 350ms ease-in;
 }
 .portfolio .card:hover {
   transform: scale(1.03);
 }
-
+.portfolio .card p {
+  color: var(--secondary-color);
+}
 .portfolio .portfolio-content img {
   max-width: 100%;
 }
 /* End Portfolio */
+/* Start About */
+.about {
+  padding-top: var(--section-padding);
+  padding-bottom: calc(var(--section-padding) + 60px);
+}
+.about .about-content {
+  display: grid;
+  margin-top: 100px;
+  grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+  gap: 80px;
+  place-items: center start;
+  text-align: left;
+}
+.about .about-img {
+  width: 250px;
+  position: relative;
+}
+.about .about-img::after {
+  content: '';
+  background-color: #fff;
+  height: 280px;
+  right: -135px;
+  top: -30px;
+  position: absolute;
+  width: 100px;
+  border-left: 80px solid var(--main-color);
+  border-bottom: 80px solid var(--main-color);
+  z-index: -1 ;
+
+}
+.about .about-img::before {
+  content: '';
+  background-color: rgba(119, 119, 119, 0.12);
+  left: -20px;
+  top: -40px;
+  position: absolute;
+  width: 80px;
+  height: calc(375px + 80px);
+  z-index: -1 ;
+
+}
+@media (max-width: 992px) {
+  .about .about-img::before, .about .about-img::after  {
+    display: None;
+  }
+  .about .about-content {
+    place-content: center;
+    text-align: center;
+    }
+    .about .about-img {
+      margin: auto;
+    }
+}
+.about .about-img img {
+  max-width: 100%;
+}
+.about .about-text {
+  line-height: 2; 
+  width: 100%;
+}
+.about .about-text p {
+  width: 100%;
+}
+.about .about-text p:first-of-type {
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.about hr {
+  color: var(--main-color);
+  width: 50%;
+  transform: translateX(-50%);
+}
+.about .about-text p:last-of-type {
+  color: #777;
+
+}
+
+/* End About */
