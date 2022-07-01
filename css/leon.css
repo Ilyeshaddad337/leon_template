@@ -412,8 +412,10 @@ ul {
 }
 
 .contact .contact-content {
-  margin-top: 100px;
+
   text-align: center;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
 }
 
 .contact .label {
@@ -439,3 +441,23 @@ ul {
   color: var(--secondary-color) ;
 }
 /* End Contact */
+
+
+/* Start footer */
+
+.footer {
+  background-color: var(--secondary-color);
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  padding: 30px 10px;
+}
+
+.footer span {
+  color: var(--main-color);
+  font-weight: bold;
+}
+.footer span:last-of-type {
+  font-size: 10px;
+}
+/* End footer */
