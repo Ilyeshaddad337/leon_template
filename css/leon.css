@@ -382,12 +382,11 @@ ul {
   max-width: 100%;
 }
 .about .about-text {
-  line-height: 1.5; 
-  font-size:20px;
+  line-height: 2;
   width: 100%;
 }
 .about .about-text p {
-  width: 100%;
+  width: 80%;
 }
 .about .about-text p:first-of-type {
   font-weight: bold;
