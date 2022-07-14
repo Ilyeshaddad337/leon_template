@@ -334,9 +334,9 @@ ul {
 .about .about-content {
   display: grid;
   margin-top: 100px;
-  grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
-  gap: 80px;
-  place-items: center start;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  gap: 178px;
+  place-items: center;
   text-align: left;
 }
 .about .about-img {
@@ -371,10 +371,10 @@ ul {
   .about .about-img::before, .about .about-img::after  {
     display: None;
   }
-  .about .about-content {
-    text-align: center;
-    }
-    .about .about-img {
+  .about .about-content  {
+    gap:70px;
+  }
+  .about .about-img {
       margin: auto;
     }
     .about .about-content .about-text {
@@ -391,7 +391,7 @@ ul {
   width: 100%;
 }
 .about .about-text p {
-  width: 80%;
+  width: 100%;
 }
 .about .about-text p:first-of-type {
   font-weight: bold;
@@ -436,7 +436,7 @@ ul {
   display: block;
   color: var(--main-color);
   font-weight: 800;
-  font-size: 30px;
+  font-size: 1.85rem;
 }
 
 .contact .social {
